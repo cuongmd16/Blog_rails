@@ -12,7 +12,7 @@ section {
 }
 
 textarea {
-	resize: vertical;
+	resize: vertzical;
 }
 
 .center {
@@ -59,6 +59,10 @@ p {
 	letter-spacing: -1px;
 	padding-top: 9px;
 	font-weight: bold;
+}
+
+.signout {
+	margin-top: 12px;
 }
 
 #logo:hover {
