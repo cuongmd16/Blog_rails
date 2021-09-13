@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :profiles
   resources :blogs
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
