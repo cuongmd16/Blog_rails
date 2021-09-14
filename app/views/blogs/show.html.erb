@@ -9,6 +9,12 @@
   <strong>Content:</strong>
   <%= @blog.content %>
 </p>
-
+<br>
+<% if user_signed_in? %>
+<h2> <%= @blog.comments.count %> Comments</h2>
+    <%= render @blog.comments %>
+    <h3> Add a Comments: </h3>
+    <%= render 'comments/form' %>
+<% end %>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>

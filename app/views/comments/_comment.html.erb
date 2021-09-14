@@ -1,0 +1,6 @@
+<p><%= comment.name %></p>
+<p><%= comment.body %></p>
+<p><a class="timeago" title="<%= comment.created_at.getutc.iso8601 %>">
+  <%= comment.created_at.to_s %>
+</a></p>
+<p><%= button_to 'Delete',[comment.blog, comment], method: :delete, data: { confirm: 'Are you sure?' } %> </p>
