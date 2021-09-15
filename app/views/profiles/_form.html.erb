@@ -11,29 +11,29 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :full_name %>
-    <%= form.text_field :full_name %>
+    <%= form.text_field :full_name, class:"form-control",placeholder:"Full name" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :birthday %>
-    <%= form.date_select :birthday %>
+    <%= form.date_select :birthday, class:"form-control",placeholder:"Birth day" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :phone %>
-    <%= form.number_field :phone %>
+    <%= form.number_field :phone, class:"form-control",placeholder:"Phone" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.text_field :address, class:"form-control",placeholder:"Address" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :interests %>
-    <%= form.text_field :interests %>
+    <%= form.text_field :interests, class:"form-control",placeholder:"Interests" %>
   </div>
 
   <div class="actions">
